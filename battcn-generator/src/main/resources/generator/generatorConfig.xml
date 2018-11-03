@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<!-- classPathEntry:数据库的JDBC驱动 -->
+
+	<properties resource="generator/generator-config.properties" />
+
+	<context id="Mysql" targetRuntime="MyBatis3Simple"
+		defaultModelType="flat">
+		<!-- 生成的Java文件的编码 -->
+		<property name="javaFileEncoding" value="UTF-8" />
+		<!-- 格式化java代码 -->
+		<!--<property name="javaFormatter" value="org.mybatis.test.generator.api.dom.DefaultJavaFormatter"/> -->
+		<!-- 格式化XML代码 -->
+		<!--<property name="xmlFormatter" value="org.mybatis.test.generator.api.dom.DefaultXmlFormatter"/> -->
+		<property name="beginningDelimiter" value="`" />
+		<property name="endingDelimiter" value="`" />
+
+		<plugin type="${mapper.plugin}">
+			<property name="mappers" value="${mapper.Mapper}" />
+		</plugin>
+
+		<!-- 去除自动生成的注释 -->
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+			<property name="suppressDate" value="true" />
+		</commentGenerator>
+
+		<jdbcConnection driverClass="${jdbc.driverClass}"
+			connectionURL="${jdbc.url}" userId="${jdbc.user}" password="${jdbc.password}" />
+
+		<!-- java类型处理器 用于处理DB中的类型到Java中的类型，默认使用JavaTypeResolverDefaultImpl； 注意一点，默认会先尝试使用Integer，Long，Short等来对应DECIMAL和 
+			NUMERIC数据类型 -->
+		<!--<javaTypeResolver type="org.mybatis.generator.internal.types.JavaTypeResolverDefaultImpl"> -->
+		<!--<property name="forceBigDecimals" value="false"/> -->
+		<!--</javaTypeResolver> -->
+
+		<!-- targetProject:自动生成代码的位置 -->
+		<javaModelGenerator targetPackage="${targetModelPackage}"
+			targetProject="${targetJavaProject}">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+			<property name="constructorBased" value="false" />
+			<property name="rootClass" value="com.battcn.platform.pojo.RecordEntity" />
+			<property name="useActualColumnNames" value="true"/>
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="${targetXMLPackage}"
+			targetProject="${targetResourcesProject}">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="${targetMapperPackage}" targetProject="${targetJavaProject}">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<table tableName="t_hello" domainObjectName="Hello" 
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		
+		
+		
+		
+		
+		<!-- <table tableName="t_sys_%log" domainObjectName="Log" 
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table tableName="t_sys_%manager" domainObjectName="Manager" 
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table tableName="t_sys_%menu" domainObjectName="Menu" 
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table tableName="t_sys_%role" domainObjectName="Role" 
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table tableName="t_sys_%operate" domainObjectName="Operate" 
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table tableName="t_sys_%role_operate" domainObjectName="RoleOperate" 
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table> -->
+	</context>
+
+</generatorConfiguration>
+
