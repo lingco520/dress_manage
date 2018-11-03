@@ -1,0 +1,54 @@
+body, html {
+    height: 100%;
+    overflow: hidden;
+    background: #ECEFF8;
+}
+b, i, sav, em {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "微软雅黑"
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+.pay-wait{ background: #fff; width: 100%; display: inline-block; vertical-align: top; }
+.pay-wait > .title{ height: 1.2rem; line-height: 1.2rem; position: relative;  }
+.pay-wait > .title:before{ content:"";left: 0;bottom: 0;width: 100%;height: 2px;position: absolute;border-bottom: 1px solid #ddd;-webkit-transform-origin: 0 100%;transform-origin: 0 100%; -webkit-transform: scaleY(.5);transform: scaleY(.5);}
+.pay-wait > .title *{ font-size: 0.38rem; padding: 0 15px;}
+.pay-wait > .title b{ float: left; }
+.pay-wait > .title i{ float: right; }
+.pay-wait > .con{ height: 0.7rem; line-height: 0.7rem; position: relative; margin-top: 0.1rem; }
+.pay-wait > .con:last-child{ margin-bottom: 0.15rem;}
+.pay-wait > .con *{ font-size: 0.38rem; padding: 0 15px;}
+.pay-wait > .con b{ float: left; }
+.pay-wait > .con i{ float: right; }
+.pay-wait > .content{ padding: 10px;  }
+.pay-wait > .content p{ font-size: 0.38rem;}
+.pay-order{ background: #fff; margin-top: 10px;  }
+.pay-order .content{ width: 100%; display: inline-block; vertical-align: top;  }
+.pay-order .content > div{ float: left; }
+.pay-order .content .img{ width:2rem;}
+.pay-order .content .title{ width:calc(100% - 4.5rem); width:-webkit-calc(100% - 4.5rem);}
+.pay-order .content .price{ width:2.5rem; }
+.pay-order .content .img img{ width: 1.5rem }
+.pay-order .content .title *{ margin-top: 0.1rem;}
+.pay-order .content .title b{ font-size: 0.4rem; }
+.pay-order .content .title i{  font-size: 0.32rem; color:#9EB2B3 }
+.pay-order .content .price *{ font-size: 0.4rem; margin-top: 0.05rem}
+.footer .payBtn{ margin: 0px 15px;}
+.footer .payBtn:before{ content:"";left: 0;top: -1px;width: 100%;height: 1px;position: absolute;border-top: 1px solid #ddd;-webkit-transform-origin: 0 100%;transform-origin: 0 100%; -webkit-transform: scaleY(.5);transform: scaleY(.5);}
+.footer .payBtn a{ width: 46%; display: block; height: 40px; line-height: 40px; font-size: 16px; margin-top: 10px; border-radius:5px; text-align: center;}
+.footer .payBtn .cancel{float: left; }
+.footer .payBtn .pay{ float: right; }
+.footer .payBtn .pay:visited{ color: #1aad19!important; }

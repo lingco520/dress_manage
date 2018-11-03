@@ -1,0 +1,91 @@
+<!-- HTML5文件 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="wap-font-scale" content="no">
+	<title>商城</title>
+	<!-- ui框架引入css -->
+	<link href="../public/css/weui.min.css" rel="stylesheet" type="text/css" />
+	<link href="../public/css/jquery-weui.min.css" rel="stylesheet" type="text/css" />
+	<!-- 公用样式css -->
+	<link href="../public/css/base.css" rel="stylesheet" type="text/css" />
+	<!-- 界面引入css -->
+	<link href="../public/css/app/detail/order-pay.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- 主体部分 -->
+<div class="main bot60">
+	<!-- 待付款 -->
+	<div class="pay-wait">
+		<div class="title">
+			<b>待付款</b>
+			<i>下单时间：2016-03-20 14:12:18</i>
+		</div>
+		<div class="content">
+			<p>李希 18963321011</p>
+			<p>山东省临沂市人民南路106号</p>
+		</div>
+	</div>
+	<!-- 订单信息 -->
+	<div class="pay-wait pay-order">
+		<div class="title">
+			<b>订单信息</b>
+		</div>
+		<div class="content">
+			<div class="img">
+				<img src="../public/images/icon1.jpg" />
+			</div>
+			<div class="title">
+				<b>简化产品名称</b>
+				<i>订购数量：2套件</i>
+			</div>
+			<div class="price">
+				<b>总额：¥1600</b>
+				<i>运费：¥0.00</i>
+			</div>
+		</div>
+		<div class="title">
+			<b>订单号：</b>
+			<i>WS1223545222222222222</i>
+		</div>
+
+	</div>
+	<!-- 订单费用 -->
+	<div class="pay-wait pay-order">
+		<div class="title">
+			<b>订单费用</b>
+		</div>
+		<div class="con">
+			<b>商品总额：</b>
+			<i>¥1600</i>
+		</div>
+		<div class="con">
+			<b>运费：</b>
+			<i>¥0.00</i>
+		</div>
+		<div class="con">
+			<b>付款金额：</b>
+			<i>¥1600</i>
+		</div>
+
+	</div>
+</div>
+<!-- footer -->
+<footer class="footer h60">
+	<div class="payBtn">
+		<a href="order-address.html" class="cancel weui-btn weui-btn_disabled weui-btn_default">取消订单</a>
+		<a href="#" class="pay weui-btn weui-btn_plain-primary">去付款</a>
+	</div>
+</footer>
+<!-- jquery引入 -->
+<script type="text/javascript" src="../public/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../public/js/jquery/flexible.js"></script>
+<!-- weui引入 -->
+<script type="text/javascript" src="../public/js/jquery/weui.js"></script>
+<!-- 界面对应js -->
+<script type="text/javascript" src="../public/js/data/detail/order-pay.js"></script>
+</body>
+</html>

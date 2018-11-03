@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    overflow: hidden;
+    background: #ECEFF8;
+}
+b, i, sav, em {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "微软雅黑"
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+.order-title{background: #FC2290;  position: relative;}
+.order-title:active{ opacity: 0.7}
+.order{ display:inline-block; padding:10px 20px; color: #fff; font-size:0.4rem;width:calc(100% - 30px); width:-webkit-calc(100% - 30px); }
+.order p:nth-child(2){ padding-left: 38px;}
+.order-title .arrow{ clear: both; width: 10px; height: 10px; position: absolute; top:50%; margin-top: -5px; right: 20px; border-left: solid 1px #fff;  border-top: solid 1px #fff;  box-sizing: border-box;  transform: rotate(135deg);  -webkit-transform: rotate(135deg);  }
+.order-public{ background: #fff; display: inline-block; width: 100%; vertical-align: top; padding:15px 20px; margin-top: 15px;}
+.order-content > div{ float: left; }
+.order-content .img{ width:2rem;}
+.order-content .title{ width:calc(100% - 4.5rem); width:-webkit-calc(100% - 4.5rem);}
+.order-content .price{ width:2.5rem; }
+.order-content .img img{ width: 1.5rem }
+.order-content .title *{ margin-top: 0.1rem;}
+.order-content .title b{ font-size: 0.4rem; }
+.order-content .title i{  font-size: 0.32rem; color:#9EB2B3 }
+.order-content .price *{ font-size: 0.4rem; margin-top: 0.05rem}
+.order-style span{ display: block; text-align: center; width: 100%;}
+.order-style .wexin{ font-size: 0.4rem;color:#9EB2B3  }
+.order-style .money{ font-size: 0.5rem;color:#FC2290; padding-top:0.05rem   }

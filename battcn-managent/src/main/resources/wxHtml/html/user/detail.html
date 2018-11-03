@@ -1,0 +1,100 @@
+<!-- HTML5文件 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="wap-font-scale" content="no">
+	<title>商城</title>
+	<!-- ui框架引入css -->
+	<link href="../public/css/weui.min.css" rel="stylesheet" type="text/css" />
+	<link href="../public/css/jquery-weui.min.css" rel="stylesheet" type="text/css" />
+	<!-- 公用样式css -->
+	<link href="../public/css/base.css" rel="stylesheet" type="text/css" />
+	<!-- 界面引入css -->
+	<link href="../public/css/app/user/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="main bot44">
+   <div class="user-detail">
+     <div class="user-con">
+        <b>微信昵称</b>
+        <i>Lee899192999</i>
+     </div>
+     <div class="user-con">
+        <b>会员号</b>
+        <i>E8888888</i>
+     </div>
+     <div class="user-con">
+        <b>推荐人</b>
+        <i>15890192999</i>
+     </div>
+     <div class="user-con">
+        <b>注册时间</b>
+        <i>2016-03-20 17:06:18</i>
+     </div>
+     <div class="user-con">
+        <b>我的手机</b>
+        <i>15689129299</i>
+     </div>
+   </div>
+   <div class="user-form">
+     <b>绑定手机</b>
+     <i><input type="number" id="phone" placeholder="请输入手机号码" /></i>
+   </div>
+   <!-- 操作按钮 -->
+      <div class="mt10">
+		<div class="weui-btn  weui-btn_primary sentTime" onclick="sendCode(this)">获取验证码</div>
+        <div class="weui-btn weui-btn_disabled weui-btn_default getTime hide"></div>
+	</div>
+     <div class="user-form">
+     <b>验证码</b>
+     <i><input type="number" id="code" placeholder="请输入验证码" i /></i>
+   </div>
+   <!-- 操作按钮 -->
+      <div class="mt10">
+		<div class="weui-btn  weui-btn_primary" id="doSent">确认绑定</div>
+	</div>
+
+</div>
+<!-- footer -->
+<footer class="footer">
+     <div class="weui-tabbar">
+        <a href="../index.html" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="../public/images/icon/i-1.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">产品订购</p>
+        </a>
+        <a href="../index.html" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="../public/images/icon/i-2.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">我的二维码</p>
+        </a>
+        <a href="../order/index.html" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="../public/images/icon/i-3.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">我的订单</p>
+        </a>
+        <a href="index.html" class="weui-tabbar__item weui-bar__item--on">
+          <div class="weui-tabbar__icon">
+            <img src="../public/images/icon/i-4.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">个人中心</p>
+        </a>
+      </div>
+</footer>
+
+
+<!-- jquery引入 -->
+<script type="text/javascript" src="../public/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../public/js/jquery/flexible.js"></script>
+<!-- weui引入 -->
+<script type="text/javascript" src="../public/js/jquery/weui.js"></script>
+<!-- 界面对应js -->
+<script type="text/javascript" src="../public/js/data/user/detail.js"></script>
+</body>
+</html>

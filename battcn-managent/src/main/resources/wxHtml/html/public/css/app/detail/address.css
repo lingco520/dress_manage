@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    overflow: hidden;
+    background: #ECEFF8;
+}
+b, i, sav, em {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "微软雅黑"
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+.hig{ height: 2.2rem!important; line-height:20px!important;}
+.hig b{ margin-top: 10px;}
+.address-div{ margin-top: 15px; display: inline-block; width: 100%; background: #fff; vertical-align: top; position: relative  }
+.address-div:before{ content:"";left: 0;bottom: 0;width: 100%;height: 2px;position: absolute;border-bottom: 1px solid #ddd;-webkit-transform-origin: 0 100%;transform-origin: 0 100%; -webkit-transform: scaleY(.5);transform: scaleY(.5);}
+.address-div:after{ content:"";left: 0;top:-1px;width: 100%;height:1px;position: absolute;border-top: 1px solid #ddd;-webkit-transform-origin: 0 100%;transform-origin: 0 100%; -webkit-transform: scaleY(.5);transform: scaleY(.5);}
+.address-con{ height: 1.2rem; line-height: 1.2rem; position: relative }
+.address-con:last-child:after{ border: none}
+.address-con:after{ content:"";left: 0;bottom: 0;width: 100%;height: 2px;position: absolute;border-bottom: 1px solid #ddd;-webkit-transform-origin: 0 100%;transform-origin: 0 100%; -webkit-transform: scaleY(.5);transform: scaleY(.5);}
+.address-con *{ float: left; height: 100%;}
+.address-con b{ width: 2.4rem; font-size: 0.38rem; padding-left: 10px; }
+.address-con i{width:calc(100% - 2.4rem); width:-webkit-calc(100% - 2.4rem); }
+.address-con i input{ display: block; width: calc(100% - 20px); width:-webkit-calc(100% - 20px);  height: 100%; border: none; background:none;}
+.address-con i textarea{ display: block; width: 100%; height: 100%; border: none; background:none; padding: 10px 0;  }
+.address-con .arrow{ width: 10px; height: 10px; position: absolute; right: 20px;top:3px; border-left: solid 1px #C4C5CA;  border-top: solid 1px #C4C5CA;  box-sizing: border-box;  transform: rotate(135deg);  -webkit-transform: rotate(135deg);  margin: 14px 0 0 20px; }
+.weui-picker-modal{ height: 7.6rem!important;}
+.weui-picker-modal *{ font-size: 14px;}
+.weui-picker-modal .title{ font-size: 16px!important;line-height: 44px!important;}
+.toolbar .toolbar-inner{ height: 44px!important; line-height: 44px!important;}
+.toolbar .picker-button{line-height: 44px!important; font-size: 16px!important; }
+.weui-picker-modal .picker-modal-inner {  height: 6rem!important;}

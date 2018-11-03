@@ -1,0 +1,28 @@
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+b, i, sav, em {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "微软雅黑"
+}
+.footer .weui-btn{ margin: 8px 10px;}
+.contentDiv{ display: inline-block; vertical-align: top; width: 100%; margin: 10px 0;}
+.contentDiv *{ margin: 0px 20px;}
+.contentDiv .title{ font-size: 0.625rem; }
+.contentDiv .tag{ font-size: 0.4rem; color: #708C9A}
+.contentDiv .price{ font-size: 0.7rem; font-family: Arial; color:#FB218F }
+.contentDiv .numTitle{ font-size: 0.4rem; margin-top:0.175rem }
+.contentDiv .numContent .on{ color: #fff!important; background: #1aad19!important; }
+.contentDiv .numContent  li{ float: left; width: 46%; height:1rem; line-height: 1rem; color: #D7D9D8; border: solid 1px #D7D9D8; border-radius:0.125rem;  margin:0.2rem 0!important; text-align: center; font-size:0.4rem   }
+.contentDiv .numContent  li:nth-child(2n+2){ float:right;   }
+.contentDiv .isure{ display: inline-block; width: 100%; vertical-align: top;  margin:0; padding: 0 20px; }
+.contentDiv .isure *{ margin: 0; float: left; height:0.75rem   }
+.contentDiv .isure .on{ background: url(../../../images/sel.png)  no-repeat center!important;  background-size:20px 20px!important;  }
+.contentDiv .isure .left{ width: 0.9rem; background: url(../../../images/n-sel.png)  no-repeat center; background-size:20px 20px;  }
+.contentDiv .isure .right{  height:calc(100% - 0.9rem); height:-webkit-calc(100% - 0.9rem); font-size: 0.4rem; line-height: 0.75rem;}
+.contentDiv .isview{ width: 100%; display: inline-block; vertical-align: top; margin: 0.2rem 0 0 0; padding: 0 20px;}
+.contentDiv .isview img{ width: 100%; margin: 0;}
